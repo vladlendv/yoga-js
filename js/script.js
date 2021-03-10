@@ -240,7 +240,7 @@ window.addEventListener('DOMContentLoaded', function() {
 		if (restDays.value == '' || persons.value == '' || persons.value <= 0 || restDays.value <= 0) {
 			totalValue.innerHTML = 0;
 		} else {
-			totalValue.innerHTML = total;
+			totalValue.innerHTML = total * place.options[place.selectedIndex].value;
 		}
 	});
 
@@ -250,7 +250,7 @@ window.addEventListener('DOMContentLoaded', function() {
 		if (restDays.value == '' || persons.value == '' || persons.value <= 0 || restDays.value <= 0) {
 			totalValue.innerHTML = 0;
 		} else {
-			totalValue.innerHTML = total;
+			totalValue.innerHTML = total * place.options[place.selectedIndex].value;
 		}
 	});
 
